@@ -6,7 +6,7 @@ html{
 	font-family: 'Mukta', sans-serif;
 }
 body {
-	background-color: #E5E7E8;
+	background-color: #040405   ;
 	margin:0;
 }
 .container{
@@ -122,7 +122,7 @@ body {
 
 
 .habilidad {
-	background-color: #18406E;
+	background-color: #E51010 ;
 	color: #fff;
 	display: inline-block;
 	font-size: 12px;
@@ -131,7 +131,7 @@ body {
 }
 
 .habilidad-proyecto {
-	background-color: #29597C;
+	background-color: #E51010 ;
 	color: #fff;
 	display: inline-block;
 	font-size: 12px;
@@ -140,7 +140,7 @@ body {
 }
 
 .habilidades {
-	padding: 0;
+	padding: 5;
 }
 #links {
 	color: #fff;
@@ -148,7 +148,7 @@ body {
 
 .proyecto__titulo{
 
-	color: #29597C;
+	color: #FFFFFF ;
 	font-size: 19px;
 }
 
