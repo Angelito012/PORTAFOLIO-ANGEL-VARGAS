@@ -7,21 +7,19 @@ html{
 }
 body {
 	background-color: #040405   ;
-	margin:0;
 }
 .container{
-	display: flex;
+	width: 100%;
 
 }
 /* Lado lateral izquierdo*/
 .lateral {
-	display: flex;
-	flex-direction: column;
 	position: fixed;
-	height: 100vh;
-	padding: 1em;
-	justify-content: space-between;
-	width: 25%;
+    padding: 1em;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 350px;
 	background: #45000d;
 	background: -moz-linear-gradient(-75deg,  #45000d 0%, #000000 100%);
 	background: -webkit-linear-gradient(-75deg,  #45000d 0%,#000000 100%);
@@ -29,8 +27,9 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 );
 }
 .proyectos{
-	margin-left: 25%;
-	padding: 2em;
+	display: table;
+	margin-left: 350px;
+	padding: 1em;
 }
 
 .arrow {
@@ -41,11 +40,11 @@ body {
 }
 
 .perfil__circulo{
-	height: 30%;
-	margin: 0;
-	overflow: hidden;
-	width: 30%;
 	border-radius: 50%;
+    height: 50px;
+    margin: 0;
+    overflow: hidden;
+    width: 50px;
 
 }
 
@@ -58,14 +57,13 @@ body {
 
 .perfil__foto{
 	width: 100%;
-	height: 100%;
 }
 
 .perfil__nombres {
 	color: #fff;
 	font-size: 20px;
-	margin-left: .5em;
-	width: 70%;
+	margin-left: 0.5em;
+	width: 250px;
 
 }
 
@@ -76,6 +74,8 @@ body {
 
 .informacion{
 	color: #fff;
+	position: absolute;
+    bottom: 1em;
 	
 
 }
@@ -86,9 +86,9 @@ body {
 }
 
 .proyecto{
-	width: 48%;
-	height: 100%;
-	margin-bottom: 1em;
+	display: table-cell;
+    padding: 1em;
+    width: 50%;
 
 }
 
@@ -97,28 +97,48 @@ body {
 
 }
 
-@media (max-width: 800px){
-	.arrow {
-		flex-direction: column;
-	}
-
-	.proyecto{
-		width: 100%;
-	}
-
-	.perfil{
-		flex-direction: column;
-	}
-
-	.perfil__circulo{
-		margin: 0;
-		overflow: hidden;
-		width: 70%;
-		border-radius: 50%;
-	
-	}
+@media screen and (max-width:500px) {
+	.lateral{
+       width: 100%;
+       height: auto;
+        position: relative;
+   }
+   .informacion{
+       position: relative;
+   }
+  
+    .proyectos{
+      margin-left: 0;
+        width: 100%;
+    }
 	
 }
+@media screen and (max-width:400px) {
+
+  
+    .lateral{
+        width: 100%;
+        height: auto;
+         position: relative;
+    }
+    .perfil_nombres{
+        position: relative;
+    }
+    .informacion{
+        position: relative;
+    }
+   
+     .proyectos{
+       margin-left: 0;
+         width: 100%;
+     }
+     
+     .proyecto{
+         width: 100%;
+         display: block;
+     }
+    
+ }
 
 
 .habilidad {
@@ -126,7 +146,7 @@ body {
 	color: #fff;
 	display: inline-block;
 	font-size: 12px;
-	padding: .5em;
+	padding: 0.5em;
 	text-transform: uppercase;
 }
 
@@ -135,12 +155,12 @@ body {
 	color: #fff;
 	display: inline-block;
 	font-size: 12px;
-	padding: .5em;
+	padding: 0.5em;
 	text-transform: uppercase;
 }
 
 .habilidades {
-	padding: 5;
+	padding: 0;
 }
 #links {
 	color: #fff;
