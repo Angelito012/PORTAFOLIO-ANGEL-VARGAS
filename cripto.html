@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizar Criptomonedas</title>
+    <link rel="stylesheet" type="text/css" href="CSS/vendor/normalize.css">
+    <link rel="stylesheet" href="CSS/skeleton5.css">
+    <link rel="stylesheet" href="CSS/app2.css">
+    <link rel="stylesheet" type="text/html" href="index.html">
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+</head>
+<body>
+    <section class="lateral">
+        <div class="perfil">
+            <figure class="perfil__circulo">
+                <img src="img/Perfil.jpg" alt="" class="perfil__foto">
+            </figure>	
+            <h1 class="perfil__nombres">
+                Angel David Vargas Escobar
+            </h1>
+        </div>
+
+        <div class="informacion">
+            <h2 class="informacion__titulo">
+                Desarrollador
+            </h2>
+            <p class="informacion__descripcion">Este portafolio contiene proyectos realizados por <strong>Angel David Vargas Escobar</strong></p>
+            <ul class="habilidades">
+                <li class="habilidad">HTML 5</li>
+                <li class="habilidad">CSS</li>
+                <li class="habilidad">JavaScript</li>
+                <li  class="habilidad"><a id="links" href="index.html">Regresar al Portafolio.</a></li>
+                </ul>
+        </div>
+</section>
+<section class="proyectos">
+    <div class="container">
+        <div class="row">
+            <div class="one-half column">
+                <img src="img/cryptomonedas.png">
+            </div>
+            <div class="one-half column">
+                <form id="formulario">
+                    <div class="row">
+                        <label>Elige tu Moneda</label>
+                        <select
+                            class="u-full-width"
+                            id="moneda"
+                            name="moneda"
+                        >
+                                <option value="">Elige tu moneda</option>
+                                <option value="USD">Dolar Estadounidense</option>
+                                <option value="MXN">Peso Mexicano</option>
+                                <option value="GBP">Libras</option>
+                                <option value="EUR">Euros</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                    <div>
+                        <label>Elige tu Criptomoneda</label>
+                        <select 
+                            class="u-full-width"
+                            id="criptomonedas"
+                            name="criptomoneda"
+                        >
+                            <option value="">Elige tu criptomoneda</option>
+                        </select>
+                    </div>
+                    </div>
+                    <input class="button-primary u-full-width" type="submit" value="Cotizar" />
+
+                    <div id="resultado" class="resultado"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="js/app15.js"></script>
+    
+</body>
+</html>
